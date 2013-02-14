@@ -1,0 +1,19 @@
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 200px;
+  right: 0px;
+  background-color: #00aded;
+  border-bottom: 1px solid #d8f3fd;
+  height: 200px;
+  z-index: 15;
+}
+
+#content {
+  width: 960px;
+  margin: auto;
+  margin-top: 230px;
+  text-align: left;
+  z-index: 10;
+}

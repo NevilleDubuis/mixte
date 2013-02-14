@@ -1,8 +1,9 @@
-Crashlog created at 2013-02-04 22:15:47 +0100
+Crashlog created at 2013-02-14 21:24:35 +0100
 
 ===== MESSAGE:
 
-Errno::EADDRINUSE: Address already in use - bind(2)
+Sass::SyntaxError: Invalid CSS after "  top": expected "{", was "; 0px"
+  (in /home/ndubuis/Dev/mixte/website/content/assets/stylesheets/application.css.scss:3)
 
 ===== COMPILATION STACK:
 
@@ -10,35 +11,88 @@ Errno::EADDRINUSE: Address already in use - bind(2)
 
 ===== STACK TRACE:
 
-  0. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/utils.rb:85:in `initialize'
-  1. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/utils.rb:85:in `new'
-  2. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/utils.rb:85:in `block in create_listeners'
-  3. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/utils.rb:82:in `each'
-  4. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/utils.rb:82:in `create_listeners'
-  5. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:82:in `listen'
-  6. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:70:in `initialize'
-  7. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:45:in `initialize'
-  8. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.1/lib/rack/handler/webrick.rb:11:in `new'
-  9. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.1/lib/rack/handler/webrick.rb:11:in `run'
-  10. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli/commands/autocompile.rb:60:in `run'
-  11. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli/command_runner.rb:14:in `block in call'
-  12. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
-  13. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  14. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli/command_runner.rb:13:in `call'
-  15. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
-  16. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
-  17. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
-  18. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
-  19. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
-  20. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli.rb:52:in `block in run'
-  21. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
-  22. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  23. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli.rb:50:in `run'
-  24. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/bin/nanoc:19:in `<top (required)>'
-  25. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/bin/nanoc:19:in `load'
-  26. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/bin/nanoc:19:in `<main>'
-  27. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
-  ... 30 more lines omitted. See full crash log for details.
+  0. /home/ndubuis/Dev/mixte/website/content/assets/stylesheets/application.css.scss:3
+  1. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:1136:in `expected'
+  2. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:1072:in `expected'
+  3. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:1067:in `tok!'
+  4. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:522:in `block'
+  5. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:517:in `ruleset'
+  6. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:579:in `block in declaration_or_ruleset'
+  7. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:1110:in `call'
+  8. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:1110:in `rethrow'
+  9. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:580:in `declaration_or_ruleset'
+  10. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:542:in `block_child'
+  11. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:534:in `block_contents'
+  12. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:523:in `block'
+  13. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:517:in `ruleset'
+  14. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:541:in `block_child'
+  15. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:531:in `block_contents'
+  16. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:70:in `stylesheet'
+  17. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/scss/parser.rb:27:in `parse'
+  18. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/engine.rb:342:in `_to_tree'
+  19. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
+  20. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
+  21. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-sass-0.9.1/lib/sprockets/sass/sass_template.rb:40:in `evaluate'
+  22. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.3.3/lib/tilt/template.rb:76:in `render'
+  23. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/context.rb:197:in `block in evaluate'
+  24. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/context.rb:194:in `each'
+  25. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/context.rb:194:in `evaluate'
+  26. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/processed_asset.rb:12:in `initialize'
+  27. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:374:in `new'
+  28. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:374:in `block in build_asset'
+  29. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:395:in `circular_call_protection'
+  30. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:373:in `build_asset'
+  31. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/index.rb:94:in `block in build_asset'
+  32. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/caching.rb:51:in `cache_asset'
+  33. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/index.rb:93:in `build_asset'
+  34. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:287:in `find_asset'
+  35. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/index.rb:61:in `find_asset'
+  36. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/bundled_asset.rb:16:in `initialize'
+  37. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:377:in `new'
+  38. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:377:in `build_asset'
+  39. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/index.rb:94:in `block in build_asset'
+  40. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/caching.rb:51:in `cache_asset'
+  41. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/index.rb:93:in `build_asset'
+  42. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:287:in `find_asset'
+  43. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/index.rb:61:in `find_asset'
+  44. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/environment.rb:75:in `find_asset'
+  45. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:295:in `[]'
+  46. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-helpers-0.8.0/lib/sprockets/helpers.rb:129:in `block in asset_path'
+  47. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:146:in `block in resolve'
+  48. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib/hike/index.rb:142:in `block in match'
+  49. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib/hike/index.rb:134:in `each'
+  50. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib/hike/index.rb:134:in `match'
+  51. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib/hike/index.rb:113:in `block in find_in_paths'
+  52. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib/hike/index.rb:112:in `each'
+  53. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib/hike/index.rb:112:in `find_in_paths'
+  54. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib/hike/index.rb:63:in `block in find'
+  55. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib/hike/index.rb:57:in `each'
+  56. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib/hike/index.rb:57:in `find'
+  57. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib/hike/trail.rb:139:in `find'
+  58. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib/sprockets/base.rb:130:in `resolve'
+  59. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-helpers-0.8.0/lib/sprockets/helpers.rb:128:in `asset_path'
+  60. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-sprockets-filter-0.0.2/lib/nanoc/helpers/sprockets.rb:28:in `asset_path'
+  61. ./Rules:36:in `block in load'
+  62. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  63. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  64. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/base/compilation/compiler.rb:238:in `block (2 levels) in route_reps'
+  65. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/base/compilation/compiler.rb:236:in `each_pair'
+  66. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/base/compilation/compiler.rb:236:in `block in route_reps'
+  67. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/base/compilation/compiler.rb:231:in `each'
+  68. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/base/compilation/compiler.rb:231:in `route_reps'
+  69. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/base/compilation/compiler.rb:123:in `load'
+  70. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/base/compilation/compiler.rb:82:in `run'
+  71. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  72. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli/commands/watch.rb:42:in `block in run'
+  73. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli/commands/watch.rb:78:in `call'
+  74. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib/nanoc/cli/commands/watch.rb:78:in `block in run'
+  75. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/listen-0.7.2/lib/listen/multi_listener.rb:108:in `call'
+  76. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/listen-0.7.2/lib/listen/multi_listener.rb:108:in `on_change'
+  77. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/listen-0.7.2/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+  78. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/listen-0.7.2/lib/listen/adapter.rb:198:in `call'
+  79. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/listen-0.7.2/lib/listen/adapter.rb:198:in `report_changes'
+  80. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/listen-0.7.2/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+  ... 83 more lines omitted. See full crash log for details.
 
 ===== VERSION INFORMATION:
 
@@ -51,6 +105,7 @@ Linux ndubuis-UX32VD 3.5.0-23-generic #35-Ubuntu SMP Thu Jan 24 13:15:40 UTC 201
 
 ===== INSTALLED GEMS:
 
+  adsf 1.1.1
   bundler 1.2.3
   chunky_png 1.2.7
   coderay 1.0.8
@@ -61,6 +116,7 @@ Linux ndubuis-UX32VD 3.5.0-23-generic #35-Ubuntu SMP Thu Jan 24 13:15:40 UTC 201
   em-websocket 0.4.0
   eventmachine 1.0.0
   execjs 1.4.0
+  ffi 1.0.11
   fssm 0.2.10
   guard 1.6.2
   guard-bundler 1.0.0
@@ -85,7 +141,7 @@ Linux ndubuis-UX32VD 3.5.0-23-generic #35-Ubuntu SMP Thu Jan 24 13:15:40 UTC 201
   pry 0.9.11.4
   rack 1.5.1
   rack-protection 1.3.2
-  rb-fsevent 0.9.3
+  rb-inotify 0.8.8
   ref 1.0.2
   sass 3.2.5
   sinatra 1.3.4
@@ -105,14 +161,14 @@ Linux ndubuis-UX32VD 3.5.0-23-generic #35-Ubuntu SMP Thu Jan 24 13:15:40 UTC 201
 BUNDLE_BIN_PATH => "/home/ndubuis/.rvm/gems/ruby-1.9.3-p374@global/gems/bundler-1.2.3/bin/bundle"
 BUNDLE_GEMFILE => "/home/ndubuis/Dev/mixte/website/Gemfile"
 COLORFGBG => "15;0"
-DBUS_SESSION_BUS_ADDRESS => "unix:abstract=/tmp/dbus-9HZN6xGamv,guid=1bfbe9593d5dd093647d6a095110192a"
+DBUS_SESSION_BUS_ADDRESS => "unix:abstract=/tmp/dbus-F6ezwn1jiu,guid=ecacd3676ad975658a93547c511d31e9"
 DEFAULTS_PATH => "/usr/share/gconf/kde-plasma.default.path"
 DESKTOP_SESSION => "kde-plasma"
 DISPLAY => ":0"
 GDMSESSION => "kde-plasma"
 GEM_HOME => "/home/ndubuis/.rvm/gems/ruby-1.9.3-p374"
 GEM_PATH => "/home/ndubuis/.rvm/gems/ruby-1.9.3-p374:/home/ndubuis/.rvm/gems/ruby-1.9.3-p374@global"
-GPG_AGENT_INFO => "/tmp/gpg-kLwpGX/S.gpg-agent:1775:1"
+GPG_AGENT_INFO => "/tmp/gpg-HdXh2Z/S.gpg-agent:1693:1"
 GS_LIB => "/home/ndubuis/.fonts"
 GTK2_RC_FILES => "/etc/gtk-2.0/gtkrc:/home/ndubuis/.gtkrc-2.0:/home/ndubuis/.kde/share/config/gtkrc-2.0"
 GTK_RC_FILES => "/etc/gtk/gtkrc:/home/ndubuis/.gtkrc:/home/ndubuis/.kde/share/config/gtkrc"
@@ -123,7 +179,7 @@ KDE_MULTIHEAD => "false"
 KDE_SESSION_UID => "1000"
 KDE_SESSION_VERSION => "4"
 KONSOLE_DBUS_SERVICE => ":1.64"
-KONSOLE_DBUS_SESSION => "/Sessions/3"
+KONSOLE_DBUS_SESSION => "/Sessions/1"
 KONSOLE_PROFILE_NAME => "Shell"
 LANG => "en_US.UTF-8"
 LANGUAGE => ""
@@ -140,12 +196,12 @@ PWD => "/home/ndubuis/Dev/mixte/website"
 QT_PLUGIN_PATH => "/home/ndubuis/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/"
 RUBYOPT => "-I/home/ndubuis/.rvm/gems/ruby-1.9.3-p374@global/gems/bundler-1.2.3/lib -rbundler/setup"
 RUBY_VERSION => "ruby-1.9.3-p374"
-SESSION_MANAGER => "local/ndubuis-UX32VD:@/tmp/.ICE-unix/1875,unix/ndubuis-UX32VD:/tmp/.ICE-unix/1875"
+SESSION_MANAGER => "local/ndubuis-UX32VD:@/tmp/.ICE-unix/1795,unix/ndubuis-UX32VD:/tmp/.ICE-unix/1795"
 SHELL => "/bin/bash"
-SHELL_SESSION_ID => "3075468818694000a6d741122b90bef7"
+SHELL_SESSION_ID => "38689fe59870400096696a9dc30c84ae"
 SHLVL => "1"
-SSH_AGENT_PID => "1774"
-SSH_AUTH_SOCK => "/tmp/ssh-NKGn5N5Q4khB/agent.1737"
+SSH_AGENT_PID => "1692"
+SSH_AUTH_SOCK => "/tmp/ssh-s9Zwl47EbM1r/agent.1655"
 TERM => "xterm"
 UBUNTU_MENUPROXY => "libappmenu.so"
 USER => "ndubuis"
@@ -156,7 +212,7 @@ XDG_CONFIG_DIRS => "/etc/xdg/xdg-kde-plasma:/etc/xdg"
 XDG_DATA_DIRS => "/usr/share/kde-plasma:/usr/local/share/:/usr/share/"
 XDG_RUNTIME_DIR => "/run/user/ndubuis"
 XDG_SEAT_PATH => "/org/freedesktop/DisplayManager/Seat0"
-XDG_SESSION_COOKIE => "e54b71db1e02c6455c2c377151099e0f-1360009514.388873-1054849972"
+XDG_SESSION_COOKIE => "e54b71db1e02c6455c2c377151099e0f-1360867817.59249-1217126511"
 XDG_SESSION_PATH => "/org/freedesktop/DisplayManager/Session0"
 _ => "/home/ndubuis/.rvm/gems/ruby-1.9.3-p374/bin/nanoc"
 _ORIGINAL_GEM_PATH => "/home/ndubuis/.rvm/gems/ruby-1.9.3-p374:/home/ndubuis/.rvm/gems/ruby-1.9.3-p374@global"
@@ -166,13 +222,11 @@ _second => "1"
 escape_flag => "1"
 rvm_bin_path => "/home/ndubuis/.rvm/bin"
 rvm_debug_clr => "\e[35m"
-rvm_env_string => "ruby-1.9.3-p374"
 rvm_error_clr => "\e[31m"
 rvm_notify_clr => "\e[32m"
 rvm_path => "/home/ndubuis/.rvm"
 rvm_prefix => "/home/ndubuis"
 rvm_reset_clr => "\e(B\e[m"
-rvm_ruby_string => "ruby-1.9.3-p374"
 rvm_version => "1.18.5 (stable)"
 rvm_warn_clr => "\e[33m"
 
@@ -181,6 +235,8 @@ rvm_warn_clr => "\e[33m"
 GEM
   remote: http://rubygems.org/
   specs:
+    adsf (1.1.1)
+      rack (>= 1.0.0)
     chunky_png (1.2.7)
     coderay (1.0.8)
     colored (1.2)
@@ -197,6 +253,7 @@ GEM
     eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    ffi (1.0.11)
     fssm (0.2.10)
     guard (1.6.2)
       listen (>= 0.6.0)
@@ -246,7 +303,8 @@ GEM
     rack (1.5.1)
     rack-protection (1.3.2)
       rack
-    rb-fsevent (0.9.3)
+    rb-inotify (0.8.8)
+      ffi (>= 0.5.0)
     ref (1.0.2)
     sass (3.2.5)
     sinatra (1.3.4)
@@ -281,6 +339,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  adsf
   compass
   guard
   guard-bundler
@@ -292,7 +351,7 @@ DEPENDENCIES
   nanoc-sprockets-filter
   pony
   rack
-  rb-fsevent
+  rb-inotify
   sass
   sinatra
   sprockets
@@ -311,54 +370,58 @@ DEPENDENCIES
   5. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-helpers-0.8.0/lib
   6. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.3.4/lib
   7. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/ref-1.0.2/lib
-  8. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/rb-fsevent-0.9.3/lib
+  8. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/rb-inotify-0.8.8/lib
   9. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.3.2/lib
   10. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/pony-1.4/lib
   11. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-sprockets-filter-0.0.2/lib
   12. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sprockets-2.8.2/lib
   13. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.3.3/lib
-  14. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.1/lib
-  15. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-gzip-filter-0.0.1/lib
-  16. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib
-  17. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/mail-2.5.3/lib
-  18. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/treetop-1.4.12/lib
-  19. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/polyglot-0.3.3/lib
-  20. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/mime-types-1.20.1/lib
-  21. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/livereload-1.6.1/lib
-  22. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/libv8-3.11.8.13-x86_64-linux/lib
-  23. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/libv8-3.11.8.13-x86_64-linux/ext
-  24. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/json-1.7.6/lib
-  25. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/i18n-0.6.1/lib
-  26. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib
-  27. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/guard-livereload-1.1.3/lib
-  28. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/guard-bundler-1.0.0/lib
-  29. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/guard-1.6.2/lib
-  30. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/thor-0.17.0/lib
-  31. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/terminal-table-1.4.5/lib
-  32. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/pry-0.9.11.4/lib
-  33. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/slop-3.4.3/lib
-  34. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/method_source-0.8.1/lib
-  35. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/lumberjack-1.0.2/lib
-  36. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/listen-0.7.2/lib
-  37. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/execjs-1.4.0/lib
-  38. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/multi_json-1.5.0/lib
-  39. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/em-websocket-0.4.0/lib
-  40. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/http_parser.rb-0.5.3/lib
-  41. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.0/lib
-  42. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/em-dir-watcher-0.9.4/lib
-  43. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/cri-2.3.0/lib
-  44. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib
-  45. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib
-  46. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib
-  47. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/colored-1.2/lib
-  48. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/coderay-1.0.8/lib
-  49. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/chunky_png-1.2.7/lib
-  50. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374@global/gems/bundler-1.2.3/lib
-  51. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/site_ruby/1.9.1
-  52. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/site_ruby/1.9.1/x86_64-linux
-  53. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/site_ruby
-  54. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/vendor_ruby/1.9.1
-  55. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/vendor_ruby/1.9.1/x86_64-linux
-  56. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/vendor_ruby
-  57. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1
-  58. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/x86_64-linux
+  14. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-gzip-filter-0.0.1/lib
+  15. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/nanoc-3.5.0/lib
+  16. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/mail-2.5.3/lib
+  17. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/treetop-1.4.12/lib
+  18. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/polyglot-0.3.3/lib
+  19. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/mime-types-1.20.1/lib
+  20. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/livereload-1.6.1/lib
+  21. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/libv8-3.11.8.13-x86_64-linux/lib
+  22. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/libv8-3.11.8.13-x86_64-linux/ext
+  23. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/json-1.7.6/lib
+  24. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/i18n-0.6.1/lib
+  25. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/hike-1.2.1/lib
+  26. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/guard-livereload-1.1.3/lib
+  27. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/guard-bundler-1.0.0/lib
+  28. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/guard-1.6.2/lib
+  29. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/thor-0.17.0/lib
+  30. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/terminal-table-1.4.5/lib
+  31. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/pry-0.9.11.4/lib
+  32. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/slop-3.4.3/lib
+  33. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/method_source-0.8.1/lib
+  34. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/lumberjack-1.0.2/lib
+  35. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/listen-0.7.2/lib
+  36. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/ffi-1.0.11/lib
+  37. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/ffi-1.0.11/ext
+  38. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/execjs-1.4.0/lib
+  39. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/multi_json-1.5.0/lib
+  40. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/em-websocket-0.4.0/lib
+  41. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/http_parser.rb-0.5.3/lib
+  42. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.0/lib
+  43. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/em-dir-watcher-0.9.4/lib
+  44. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/cri-2.3.0/lib
+  45. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib
+  46. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib
+  47. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib
+  48. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/colored-1.2/lib
+  49. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/coderay-1.0.8/lib
+  50. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/chunky_png-1.2.7/lib
+  51. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/adsf-1.1.1/lib
+  52. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.1/lib
+  53. /home/ndubuis/.rvm/gems/ruby-1.9.3-p374@global/gems/bundler-1.2.3/lib
+  54. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/site_ruby/1.9.1
+  55. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/site_ruby/1.9.1/x86_64-linux
+  56. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/site_ruby
+  57. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/vendor_ruby/1.9.1
+  58. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/vendor_ruby/1.9.1/x86_64-linux
+  59. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/vendor_ruby
+  60. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1
+  61. /home/ndubuis/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/x86_64-linux
+  62. /home/ndubuis/Dev/mixte/website

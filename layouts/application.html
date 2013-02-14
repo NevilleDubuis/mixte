@@ -1,9 +1,12 @@
 <html>
   <head>
     <title><%= @item[:title] %></title>
+    <link rel="stylesheet" href="<%= stylesheet_path 'application' %>" media="screen">
   </head>
   <body>
-    <p>Hi, I'm a new layout. Please customize me!</p>
-<%= yield %>
+    <header> </header>
+    <div id="content">
+      <%= yield %>
+    </div>
   </body>
 </html>
