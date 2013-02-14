@@ -7,7 +7,15 @@ header {
   background-color: #00aded;
   border-bottom: 1px solid #d8f3fd;
   height: 200px;
-  z-index: 15;
+
+  #header-content {
+  width: 960px;
+  margin: auto;
+
+    img {
+      height: 200px;
+    }
+  }
 }
 
 #content {
@@ -15,5 +23,4 @@ header {
   margin: auto;
   margin-top: 230px;
   text-align: left;
-  z-index: 10;
 }
