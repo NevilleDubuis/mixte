@@ -12,12 +12,12 @@
     //Scroll and fade out the banner text
     $('#bannertext').css({
       'margin-top': -(scrollPos/4)+"px",
-      'opacity': 1-(scrollPos/400)
+      'opacity': 1-(scrollPos/600)
     });
 
     //Scroll the background of the banner
     $('#banner').css({
-      'background-position' : 'center ' + (-scrollPos/6)+"px"
+      'background-position' : 'center ' + (-scrollPos/3)+"px"
     });
   }
 
