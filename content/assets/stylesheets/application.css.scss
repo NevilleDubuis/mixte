@@ -77,9 +77,16 @@ body {
     overflow: hidden;
     background-color: $blue;
 
+    #bannertext {
+      position: fixed;
+      top: 80px;
+      text-align: center;
+      width: 100%;
+    }
+
     h2 {
       text-align: center;
-      color: #4E8AAE;
+      color: #fff;
       font-size: 64px;
       text-transform: uppercase;
       display: block;
