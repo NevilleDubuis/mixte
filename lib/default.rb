@@ -1,2 +1,2 @@
-# All files in the 'lib' directory will be loaded
-# before nanoc starts compiling.
+# encoding: utf-8
+Encoding.default_internal = Encoding::UTF_8

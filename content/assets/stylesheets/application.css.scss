@@ -7,6 +7,16 @@
 
 @import url(http://fonts.googleapis.com/css?family=Questrial);
 
+$blue: #6ec2f3;
+$darkblue: #146697;
+$lightblue: #91cff3;
+
+body {
+  font-size: 100%;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #7d7d7b;
+}
+
 #header {
   width: 100%;
   position: relative;
@@ -19,21 +29,66 @@
     margin: 0 auto;
     position: relative;
     padding: 20px 0 20px 0;
+
+    #navigation-container {
+      right: 2.5%;
+      position: absolute;
+      top: 50%;
+      height: 20px;
+      margin-top: -10px;
+      display: inline-block;
+
+      #navigation {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline;
+        background: transparent;
+
+        #main-menu {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+
+          .menu-item {
+            display: inline-block;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+          }
+        }
+      }
+    }
   }
 
   #banner {
-    background-image: inline-image('choeur.png');
+    background-image: inline-image('header.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center top;
-    height: 400px;
+    height: 450px;
     display: block;
     margin: 0px auto 0;
     width: 100%;
     position: relative;
     padding-top: 1px;
     overflow: hidden;
-    background-color: #dddddd;
+    background-color: $blue;
+
+    h2 {
+      text-align: center;
+      color: #4E8AAE;
+      font-size: 64px;
+      text-transform: uppercase;
+      display: block;
+      text-shadow: 0 0 8px rgba(0,0,0,.3);
+      position: relative;
+      margin: 0 auto 0px;
+      padding: 0 0px;
+      font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
   }
 }
 
@@ -41,4 +96,28 @@
   width: 960px;
   margin: auto;
   text-align: left;
+}
+
+h1 {
+  color: $darkblue;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+a {
+  text-decoration: none;
+  color: $darkblue;
+  font-weight: bold;
+}
+
+a:visited {
+  color: $darkblue;
+}
+
+a:hover {
+  color: $blue;
+}
+
+a:active {
+  color: $lightblue;
 }
