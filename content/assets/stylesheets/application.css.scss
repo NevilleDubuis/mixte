@@ -12,7 +12,7 @@ $darkblue: #146697;
 $lightblue: #91cff3;
 
 body {
-  font-size: 100%;
+  font-size: 1.05em;
   font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #7d7d7b;
 }
@@ -70,7 +70,7 @@ body {
     background-position: center top;
     height: 450px;
     display: block;
-    margin: 0px auto 0;
+    margin: 0px auto 15px;
     width: 100%;
     position: relative;
     padding-top: 1px;
@@ -105,6 +105,27 @@ body {
   text-align: left;
 }
 
+.field {
+  margin-top: 20px;
+  margin-left: 20px;
+
+  label {
+    float: left;
+    width: 100px;
+    color: $darkblue;
+  }
+
+  input {
+    size: 40;
+  }
+
+  textarea {
+    size: 60;
+    height: 160px;
+    width: 460px;
+  }
+}
+
 h1 {
   color: $darkblue;
   font-weight: bold;
@@ -127,4 +148,32 @@ a:hover {
 
 a:active {
   color: $lightblue;
+}
+
+p {
+  color: #000;
+  margin: 15px 0 15px 20px;
+  text-align: justify;
+}
+
+span {
+  color: #000;
+  margin: 15px 0 15px 0;
+  text-align: justify;
+}
+
+article {
+  margin-bottom: 40px;
+
+  h1 {
+    width: 100%;
+    border-bottom: solid 1px $darkblue;
+    padding-bottom: 2px;
+  }
+
+  h2 {
+    color: $lightblue;
+    font-size: 1.1em;
+    margin: 15px 20px 0 0;
+  }
 }
