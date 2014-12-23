@@ -17,51 +17,48 @@ title: Espérance - Suchy
 </article>
 
 <article id="manifs">
-  <div class="manif">
-    <h1>Prochains Concerts</h1>
-
-    <h2>Fête Cantonale des chanteurs vaudois</h2>
-    <p class="date">25 mai 2013 - 10:30</p>
-    <p>
-      Préstation du choeur mixte l'Espérance de Suchy au temple protestant de Payerne<br />
-      <a href="http://vaudchoeurs.ch/">Plus d'informations</a>
-    </p>
-  </div>
-
+  <h1>Prochains Concerts</h1>
   <div class="manif">
     <h2>Concert de l'Avent</h2>
-    <p class="date">1 décembre 2013 - 17:00</p>
+    <p class="date">7 décembre 2014 - 17:00</p>
     <p>
       Concert de l'Avent au temple de Suchy
+    </p>
+  </div>
+  <div class="manif">
+    <h2>Concert de l'Avent</h2>
+    <p class="date">14 décembre 2014 - 17:00</p>
+    <p>
+      Concert de l'Avent au temple de Morges
     </p>
   </div>
 </article>
 
 <article id="contact">
   <h1>Nous Contactez</h1>
-  <form method=GET enctype="text/plain" action="mailto:ndubuis@gmail.com">
+  <form method="post" action="/mail">
     <div class="field">
       <label for="first_name">Prénom</label>
-      <input type="text" name="first_name" id="first_name" />
+      <input type="text" name="mail[first_name]" id="first_name" />
     </div>
 
     <div class="field">
       <label for="last_name">Nom</label>
-      <input type="text" name="last_name" id="last_name" />
+      <input type="text" name="mail[last_name]" id="last_name" />
     </div>
 
     <div class="field">
       <label for="email">Email</label>
-      <input type="text" name="email" id="email" />
+      <input type="text" name="mail[email]" id="email" />
     </div>
 
     <div class="field">
       <label for="message">Message</label>
-      <textarea name="message" id="message"></textarea>
+      <textarea name="mail[message]" id="message"></textarea>
     </div>
 
     <div class="field">
-      <input type="submit" />
+      <input type="submit" value="envoyer"/>
     </div>
   </form>
 </article>
